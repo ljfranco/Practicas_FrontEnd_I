@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    height: 100px;
+    margin-bottom: 35px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cab-pie {
+    background-color: #222222;
+    display: flex;
+    color: #F3F3F3;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-horizontal {
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    
+
+}
+
+header nav .flex-horizontal {
+    justify-content: space-around;
+    
+
+}
+li a{
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+
+.cab-pie nav {
+    width: 50%;
+    
+
+}
+
+.logo {
+    width: 92px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.nombre {
+    margin-left: 10px;
+}
+
+footer {
+    height: 150px;
+    margin-top: 35px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.list-foot {
+    list-style: none;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+footer nav .flex-horizontal {
+    flex-direction: column;
+    padding: 0px 0px 0px 20px;
+
+}
+
+footer nav ul {
+    line-height: 30px;
+}
+
+footer div .flex-horizontal {
+    align-content: flex-end;
+}
+
+footer .nombre {
+    margin-right: 42px;
+    width: 110px;
+    height: 23px;
+    align-self: center;
+    
+}
+
+.li4 {
+    order: 1;
+}
+
+.li2 {
+    order: 2;
+}
+
+.li3 {
+    order: 3;
+}
+
+/****************MAIN***************/
+main{
+    background-color: #E5E5E5;
+}
+.main-container{
+    display: flex;
+    background-color: bisque;
+    justify-content: center;
+}
+.cards{
+        height: 350PX;
+        width: 48%;
+        border-radius: 5px;
+
+}
+.card1{
+    background-image: url(../img/delivery.png);
+    background-size: cover;
+    margin-right: 2.5px;
+}
+.card1 h2{
+    margin-left: 39px;
+}
+.text1{
+    color: #FC200C;
+}
+.text2{
+    color: #fff;
+}
+.text3{
+    color: #FC200C;
+}
+.card2{
+    background-color: #FFFFFF;
+    margin-left: 2.5px;
+    font-weight: 700;
+    
+}
+.card2-container{
+    display: flex;
+    justify-content: space-around;
+}
+.card2 h2{
+    text-align: center;
+    color: #FC200C;
+}
+.card2 h3{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.card2 ol{
+    line-height: 28px;
+}
+.plato{
+    align-self: center;
+}
