@@ -1,9 +1,8 @@
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto:wght@100;400;500;700&display=swap');
 
 body {
     margin: 0px;
@@ -13,32 +12,26 @@ body {
 /*********************** Header **************************/
 .descuento {
     background-color: #D1891C;
-    /*width: 1024px;*/
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 5px 0px 5px 10px;
     font-weight: bold;
-
 }
 
 .descuento span {
     font-size: 15px;
-
 }
 
 header {
+    font-family: 'Roboto', sans-serif;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
 .titulo {
-    /*width: 1024px;*/
     height: 101px;
     padding-top: 5px;
     padding-left: 28px;
     background-color: #00669F;
-    margin-bottom: 154px;
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
 }
 
 .titulo h1 {
@@ -46,11 +39,35 @@ header {
     color: #FFFFFF;
     text-align: center;
 }
+.menu{
+    background-color: #001D2D;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    margin: 0px;
+}
+.menu li{
+    margin:5px 50px 5px 0px;
+    font-size: 16px;
+    list-style: none;
+}
+.menu :link{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu :visited{
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 /*********************** Main*****************************/
 /* contenedor de tarjetas*/
 .cards {
-
+    font-family: 'Roboto', sans-serif;
+    margin-top: 154px; 
     background-color: #FFFFFF;
     margin-bottom: 151px;
     display: flex;
@@ -68,6 +85,7 @@ article {
     margin-bottom: 50px;
     min-width: 350px;
     width: 20%;
+    padding-bottom: 25px;
 }
 
 /*Header de la tarjeta*/
@@ -138,13 +156,18 @@ article button {
     background-color: #00669F;
     color: #F3F3F3;
     border-style: none;
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
+    cursor: pointer;
+}
+article button:hover{
+    box-shadow: 0 4px 16px #00669F;
+    transition: all 0.2s ease;
 }
 
 .btn-plus {
     background-color: #00669F;
     border-radius: 50%;
-    bottom: 20px;
+    bottom: 51px;
     color: #FFFFFF;
     cursor: pointer;
     font-size: 2.5rem;
@@ -153,20 +176,124 @@ article button {
     position: fixed;
     right: 20px;
     text-align: center;
+    text-decoration: none;
     width: 60px;
 }
+.btn-plus:active{
+    background-color: #001D2D;
+}
+.btn-plus:hover{
+    box-shadow: 0 4px 16px #00669F;
+    transition: all 0.2s ease;
+}
+/*********************** Main Form.html*****************************/
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+/*********Contenedor del Formulario******************/
+.formcontainer {
+    background-color: #00669F;
+    border-radius: 49px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    color: #FBFFFD;
+    font-family: 'Inter', sans-serif;
+    margin: 40px 0px;
+    padding: 0px 80px 18px 80px;
+    width: 65vw;
+}
+.formcontainer form {
+    display: flex;
+    flex-direction: column;
+}
+/****************** Titulo del formulario**********************/
 
+.formtitle {
+    text-align: center;
+}
+.formtitle p{
+    margin: 0px 0px 10px 0px;
+}
+
+/****************** Estilos Grupos de Inputs*******************/
+.grupos {
+    display: flex;
+    width: 100%;
+}
+.formgrupo3{
+    height: 240px;
+}
+.grupos div{
+    width: 50%;
+}
+#foto{
+ line-height: 60px;
+}
+
+#name,#especie,#date {
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 95%;
+}
+#descripcion{
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    height: 220px;
+}
+#foto{
+    border-radius: 5px;
+}
+#descripcion{
+    padding: 5px;
+    width: 95%;
+}
+.checkcontainer div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.formcontainer ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.formcontainer button{
+    background: #1CD1B0;
+    border-radius: 15px;
+    cursor:pointer;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 44px;
+    width: 50%;
+}
+.boton{
+    text-align: center;
+}
+.formcontainer button:active{
+    background-color: #001D2D;
+    color: #FFFFFF;
+}
+.formcontainer button:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 16px rgb(173, 224, 245);
+    transition: all 0.2s ease;
+}
 /************************** Footer ******************************/
 footer {
-    position: relative;
-    height: 51px;
+    align-items: center;
     background-color: #00669F;
     color: #FFF9F9;
     display: flex;
-
+    font-family: 'Roboto', sans-serif;
+    height: 51px;
     justify-content: space-between;
-    align-items: center;
     padding-left: 5px;
+    position: relative;
 }
 
 footer .git {
@@ -199,3 +326,5 @@ footer .derechos {
     }
 
 }
+
+

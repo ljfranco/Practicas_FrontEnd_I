@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto:wght@100;400;500;700&display=swap');
+
 
 body {
     margin: 0px;
@@ -13,11 +14,8 @@ body {
 /*********************** Header **************************/
 .descuento {
     background-color: #D1891C;
-    /*width: 1024px;*/
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 5px 0px 5px 10px;
     font-weight: bold;
-
 }
 
 .descuento span {
@@ -37,8 +35,7 @@ header {
     padding-top: 5px;
     padding-left: 28px;
     background-color: #00669F;
-    margin-bottom: 154px;
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+
 }
 
 .titulo h1 {
@@ -47,114 +44,117 @@ header {
     text-align: center;
 }
 
-/*********************** Main*****************************/
-/* contenedor de tarjetas*/
-.cards {
-
-    background-color: #FFFFFF;
-    margin-bottom: 151px;
+.menu{
+    background-color: #001D2D;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    
+}
+.menu ul{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    margin: 0px;
+}
+.menu li{
+    margin:5px 20px 5px 0px;
+    font-size: 16px;
+}
+.menu :link{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu :visited{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/*********************** Main*****************************/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/*tarjetas*/
-article {
-    align-items: center;
-    background-color: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.formcontainer {
+    width: 65vw;
+    /*height: calc(100vh - 260px);*/
+    border-radius: 49px;
+    margin: 40px 0px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    background-color: #00669F;
+    padding: 0px 80px 18px 80px;
+    color: #FBFFFD;
+}
+
+.formtitle {
+    text-align: center;
+}
+.formtitle p{
+    margin: 0px 0px 10px 0px;
+}
+
+.formcontainer form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    min-width: 350px;
-    width: 20%;
 }
 
-/*Header de la tarjeta*/
-article div {
-    background-size: cover;
-    border-radius: 16px 16px 0px 0px;
-    height: 193px;
-    margin-bottom: 74px;
-    position: relative;
+.grupos {
+    display: flex;
     width: 100%;
+    /*height: 80px;*/
+}
+.formgrupo3{
+    height: 240px;
+}
+.grupos div{
+    width: 50%;
+}
+#foto{
+ line-height: 60px;
 }
 
-/*Fondo de cada Header de tarjeta*/
-.fondo1 {
-    background-image: url("../img/fondo-batman.png");
+#name,#especie,#date {
+    width: 95%;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
 }
-
-.fondo2 {
-    background-image: url("../img/fondo-mmaravilla.png");
+#descripcion{
+    background: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 220px;
 }
-
-.fondo3 {
-    background-image: url("../img/fondo-superman.png");
+#foto{
+    border-radius: 5px;
 }
-
-.fondo4 {
-    background-image: url("../img/fondo-hearly.png");
+#descripcion{
+    padding: 5px;
 }
-
-/*Foto del heroe*/
-.foto {
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    top: 130px;
-    left: calc(50% - 70px);
+.checkcontainer div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
-
-/*icono like*/
-.like {
-    position: absolute;
-    width: 30px;
-    height: 26.25px;
-    top: 21px;
-    left: 21px;
+ul{
+    list-style: none;
+    padding-left: 0px;
 }
-
-/*main de la tarjeta (titulo, parrafo y boton*/
-article h2 {
+button{
+    background: #1CD1B0;
+    border-radius: 15px;
+    width: 50%;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 44px;
+    cursor:pointer;
+}
+.boton{
     text-align: center;
-    font-size: 1.5rem;
-    text-transform: uppercase;
 }
 
-article p {
-    color: #333333;
-    margin: 16px;
-    font-size: 1rem;
-    height: 150px;
-}
-
-article button {
-    text-align: center;
-    font-size: 15px;
-    width: 128.78px;
-    height: 48.52px;
-    background-color: #00669F;
-    color: #F3F3F3;
-    border-style: none;
-    margin-bottom: 25px;
-}
-
-.btn-plus {
-    background-color: #00669F;
-    border-radius: 50%;
-    bottom: 20px;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 2.5rem;
-    height: 60px;
-    line-height: 60px;
-    position: fixed;
-    right: 20px;
-    text-align: center;
-    width: 60px;
-}
 
 /************************** Footer ******************************/
 footer {
@@ -194,6 +194,7 @@ footer .derechos {
     footer .git img {
         height: 25px;
     }
+
     footer .derechos {
         font-size: 1rem;
     }

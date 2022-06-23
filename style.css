@@ -140,6 +140,10 @@ footer a {
         height: 100px;
         width: 100px;
     }
+    .list-pract img:hover{
+        box-shadow: 0 4px 16px #00000093;
+        transition: all 0.2s ease;
+    }
 
     footer i {
         font-size: 18px;

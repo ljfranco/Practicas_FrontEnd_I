@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HEROES</title>
-    <link rel="stylesheet" href="../css/styleForm.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
@@ -17,51 +17,84 @@
         <div class="titulo">
             <h1>Card Super Heroes</h1>
         </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Registrarme</a></li>
+                <li><a href="#">Ingresar</a></li>
+            </ul>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="formcontainer">
             <form action="#" method="post">
-                <div>
+                <div class="formtitle">
                     <h1>Añadí tu super!</h1>
                     <p>Agregá tu personaje favorito completando las opciones.</p>
                 </div>
-                <div>
-                    <label for="name">*Nombre</label>
-                    <input type="text" name="name" id="name" required>
+                <div class="grupos formgrupo1">
+                    <div>
+                        <label for="name">*Nombre</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="especie">*Especie</label>
+                        <select name="especie" id="especie" required>
+                            <option selected hidden>Especie</option>;
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <label for="especie">*Especie</label>
-                    <select name="especie" id="especie" required></select>
+                <div class="grupos formgrupo2">
+                    <div>
+                        <label for="date">Fecha</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div>
+                        <label for="foto">Agregar Foto</label>
+                        <input type="file" name="file" id="foto" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="date">Fecha</label>
-                    <input type="date" name="date" id="date" required>
+                <div class="grupos formgrupo3">
+                    <div>
+                        <label for="descripcion"></label>
+                        <textarea name="descripcion" id="descripcion" cols="30" rows="10"
+                            placeholder="Descripcion"></textarea>
+                    </div>
+                    <div class="checkcontainer">
+                        <div>
+                            <label for="poderes">Poderes</label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="poderes" id="poderes">Volar
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="poderes" id="poderes">SuperInteligencia
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="poderes" id="poderes">Vista de rayo láser
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="poderes" id="poderes">Billetera gorda
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="tipo">Tipo de Personaje</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="tipo" id="tipo">Héroe / Heroina
+                                </li>
+                                <li>
+                                    <input type="radio" name="tipo" id="tipo">Villano / Villana
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label for="foto">Agregar Foto</label>
-                    <input type="file" name="file" id="foto" required>
-                </div>
-                <div>
-                    <label for="descripcion"></label>
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="10"
-                        placeholder="Descripcion"></textarea>
-                </div>
-                <div>
-                    <label for="poderes">Poderes</label>
-                    <input type="checkbox" name="poderes" id="poderes">Volar
-                    <input type="checkbox" name="poderes" id="poderes">SuperInteligencia
-                    <input type="checkbox" name="poderes" id="poderes">Vista de rayo láser
-                    <input type="checkbox" name="poderes" id="poderes">Billetera gorda
-                </div>
-                <div>
-                    <label for="tipo">Tipo de Personaje</label>
-                    <input type="radio" name="tipo" id="tipo">Héroe / Heroina
-                    <input type="radio" name="tipo" id="tipo">Villano / Villana
-                </div>
-                
-                <button>Añadir</button>
-
-
+                <div class="boton">
+                <button type="submit">Añadir</button>
+            </div>
             </form>
         </section>
     </main>
