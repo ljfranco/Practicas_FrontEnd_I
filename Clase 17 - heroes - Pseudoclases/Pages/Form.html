@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEROES</title>
+    <link rel="stylesheet" href="../css/styleForm.css" />
+</head>
+
+<body>
+    <div class="descuento">
+        <span> Descuentos 20%</span>
+    </div>
+    <header>
+        <div class="titulo">
+            <h1>Card Super Heroes</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form action="#" method="post">
+                <div>
+                    <h1>Añadí tu super!</h1>
+                    <p>Agregá tu personaje favorito completando las opciones.</p>
+                </div>
+                <div>
+                    <label for="name">*Nombre</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="especie">*Especie</label>
+                    <select name="especie" id="especie" required></select>
+                </div>
+                <div>
+                    <label for="date">Fecha</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div>
+                    <label for="foto">Agregar Foto</label>
+                    <input type="file" name="file" id="foto" required>
+                </div>
+                <div>
+                    <label for="descripcion"></label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10"
+                        placeholder="Descripcion"></textarea>
+                </div>
+                <div>
+                    <label for="poderes">Poderes</label>
+                    <input type="checkbox" name="poderes" id="poderes">Volar
+                    <input type="checkbox" name="poderes" id="poderes">SuperInteligencia
+                    <input type="checkbox" name="poderes" id="poderes">Vista de rayo láser
+                    <input type="checkbox" name="poderes" id="poderes">Billetera gorda
+                </div>
+                <div>
+                    <label for="tipo">Tipo de Personaje</label>
+                    <input type="radio" name="tipo" id="tipo">Héroe / Heroina
+                    <input type="radio" name="tipo" id="tipo">Villano / Villana
+                </div>
+                
+                <button>Añadir</button>
+
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="derechos">
+            <p>Todos los derechos reservados a FRONT END 1</p>
+        </div>
+        <div class="git">
+            <img src="../img/Github.svg" alt="Logo_GitHub">
+        </div>
+    </footer>
+</body>
+
+</html>

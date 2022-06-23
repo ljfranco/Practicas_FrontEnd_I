@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&display=swap');
+
+body {
+    margin: 0px;
+
+}
+
+/*********************** Header **************************/
+.descuento {
+    background-color: #D1891C;
+    /*width: 1024px;*/
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+
+}
+
+.descuento span {
+    font-size: 15px;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.titulo {
+    /*width: 1024px;*/
+    height: 101px;
+    padding-top: 5px;
+    padding-left: 28px;
+    background-color: #00669F;
+    margin-bottom: 154px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+.titulo h1 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/*********************** Main*****************************/
+/* contenedor de tarjetas*/
+.cards {
+
+    background-color: #FFFFFF;
+    margin-bottom: 151px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*tarjetas*/
+article {
+    align-items: center;
+    background-color: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    min-width: 350px;
+    width: 20%;
+}
+
+/*Header de la tarjeta*/
+article div {
+    background-size: cover;
+    border-radius: 16px 16px 0px 0px;
+    height: 193px;
+    margin-bottom: 74px;
+    position: relative;
+    width: 100%;
+}
+
+/*Fondo de cada Header de tarjeta*/
+.fondo1 {
+    background-image: url("../img/fondo-batman.png");
+}
+
+.fondo2 {
+    background-image: url("../img/fondo-mmaravilla.png");
+}
+
+.fondo3 {
+    background-image: url("../img/fondo-superman.png");
+}
+
+.fondo4 {
+    background-image: url("../img/fondo-hearly.png");
+}
+
+/*Foto del heroe*/
+.foto {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    top: 130px;
+    left: calc(50% - 70px);
+}
+
+/*icono like*/
+.like {
+    position: absolute;
+    width: 30px;
+    height: 26.25px;
+    top: 21px;
+    left: 21px;
+}
+
+/*main de la tarjeta (titulo, parrafo y boton*/
+article h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+article p {
+    color: #333333;
+    margin: 16px;
+    font-size: 1rem;
+    height: 150px;
+}
+
+article button {
+    text-align: center;
+    font-size: 15px;
+    width: 128.78px;
+    height: 48.52px;
+    background-color: #00669F;
+    color: #F3F3F3;
+    border-style: none;
+    margin-bottom: 25px;
+}
+
+.btn-plus {
+    background-color: #00669F;
+    border-radius: 50%;
+    bottom: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 2.5rem;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 60px;
+}
+
+/************************** Footer ******************************/
+footer {
+    position: relative;
+    height: 51px;
+    background-color: #00669F;
+    color: #FFF9F9;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+}
+
+footer .git {
+    position: absolute;
+    right: 20px;
+}
+
+footer .git img {
+    height: 20px;
+}
+
+footer .derechos {
+    position: absolute;
+    font-size: 0.8rem;
+}
+
+/**********************Media Queri****************************/
+@media(min-width:460px) {
+    footer {
+        justify-content: center;
+    }
+}
+
+@media(min-width:768px) {
+    footer .git img {
+        height: 25px;
+    }
+    footer .derechos {
+        font-size: 1rem;
+    }
+
+}
